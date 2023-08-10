@@ -14,12 +14,10 @@ CONTENTS 					*lsp-complete-contents*
 ==============================================================================
 1. Overview				*lsp-complete-overview*
 
-This plugin extension sources autocompletion items from LSP
+This plugin sources autocompletion items from LSP
 (https://github.com/yegappan/lsp) for Vimcomplete
 (https://github.com/girishji/vimcomplete) autocompletion plugin
 (|vimcomplete.txt|).
-
-Install LSP before installing this plugin.
 
 ==============================================================================
 2. Requirements				*lsp-complete-requirements*

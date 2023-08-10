@@ -1,10 +1,8 @@
 #### LSP Source for Vimcomplete Plugin
 
-This plugin extension sources autocompletion items from
+This plugin sources autocompletion items from
 [LSP](https://github.com/yegappan/lsp) for
 [Vimcomplete](https://github.com/girishji/vimcomplete) autocompletion plugin.
-
-Install [LSP](https://github.com/yegappan/lsp) before installing this plugin.
 
 # Requirements
 
