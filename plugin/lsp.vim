@@ -30,7 +30,6 @@ def OptionsChanged()
     var opts = vimcompletor.GetOptions('lsp')
     if !opts->empty()
         complete.options->extend(opts)
-        Register()
     endif
 enddef
 
