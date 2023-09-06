@@ -9,8 +9,11 @@ import 'vimcompletor.vim'
 import autoload '../autoload/lspcomplete.vim' as complete
 
 def Register()
+    # Note: When this function is called from LspAttached event
+    # g:LspServerRunning() is false. But later when called from
+    # OptionsChanged() this variable becomes true.
     var o = complete.options
-    if !o->has_key('enable') || o.enable
+    if (!o->has_key('enable') || o.enable) && exists('*g:LspServerRunning')
         if o->has_key('filetypes')
             vimcompletor.Register('lsp', complete.Completor, o.filetypes,  o->get('priority', 10))
         elseif g:LspServerRunning(&ft)
