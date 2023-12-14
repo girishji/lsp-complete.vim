@@ -30,6 +30,7 @@ export def Completor(findstart: number, base: string): any
         return !g:LspOmniCompletePending()
     endif
     var items = g:LspOmniFunc(findstart, base)
+    items->filter((_, v) => v.word != base)
     items = items->slice(0, options.maxCount)
     if options.dup
         items->map((_, v) => v->extend({ dup: 1 }))
