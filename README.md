@@ -1,3 +1,12 @@
+> [!CAUTION]
+> THIS PLUGIN IS NO LONGER NEEDED.
+> The functionality is already merged into [vimcomplete](https://github.com/girishji/vimcomplete).
+
+------
+------
+
+
+
 #### LSP Source for Vimcomplete Plugin
 
 This plugin sources autocompletion items from
